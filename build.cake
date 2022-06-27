@@ -25,13 +25,13 @@ Task("version")
 	GitVersion(new GitVersionSettings{
 		UpdateAssemblyInfo=true
 		});
-	packageVersion=version.NuGetVersion;
+	packageVersion=version.FullSemVer;
 	Information("version: "+packageVersion);
 	Information("version major: "+$"{version.Major}");
-	Information("version major: "+$"{version.Minor}");
-	Information("version major: "+$"{version.Patch}");
-	Information("version major: "+$"{version.PreReleaseLabel}");
-	Information("version major: "+$"{version.CommitsSinceVersionSource}");
+	Information("version minor: "+$"{version.Minor}");
+	Information("version patch: "+$"{version.Patch}");
+	Information("version label: "+$"{version.PreReleaseLabel}");
+	Information("version no of commit: "+$"{version.CommitsSinceVersionSource}");
 	
 	});
 
