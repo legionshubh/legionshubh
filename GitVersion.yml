@@ -1,8 +1,15 @@
 next-version: 1.0.0
 branches:
-  main:
+  main: 
+    regex: ^main$
+    increment: Major
     tag: main
+    source-branches: ['develop', 'feature']
   develop:
+    regex: ^develop$
+    increment: Minor
     tag: develop
   feature:
+    regex: ^feature$
+    increment: Patch
     tag: feature
