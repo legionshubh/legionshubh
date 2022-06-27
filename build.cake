@@ -28,6 +28,10 @@ Task("version")
 	packageVersion=version.NuGetVersion;
 	Information("version: "+packageVersion);
 	Information("version major: "+$"{version.Major}");
+	Information("version major: "+$"{version.Minor}");
+	Information("version major: "+$"{version.Patch}");
+	Information("version major: "+$"{version.PreReleaseLabel}");
+	Information("version major: "+$"{version.CommitsSinceVersionSource}");
 	
 	});
 
