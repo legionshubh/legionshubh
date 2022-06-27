@@ -1,0 +1,8 @@
+next-version: 1.0.0
+branches:
+  main:
+    increment: Major
+  develop:
+    increment: Minor
+  feature:
+    increment: Patch
