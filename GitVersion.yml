@@ -1,8 +1,8 @@
 next-version: 1.0.0
 branches:
   main:
-    increment: Major
+    tag: main
   develop:
-    increment: Minor
+    tag: develop
   feature:
-    increment: Patch
+    tag: feature
