@@ -1,19 +1,4 @@
-assembly-versioning-scheme: MajorMinorPatch
-mode: ContinuousDeployment
-branches:
-  main: 
-    regex: ^main$
-    increment: Major
-    tag: main
-    mode: ContinuousDeployment
-    source-branches: ['develop', 'feature']
-  develop:
-    regex: ^develop$
-    mode: ContinuousDeployment
-    increment: Minor
-    tag: develop
-  feature:
-    regex: ^feature$
-    mode: ContinuousDeployment
-    increment: Patch
-    tag: feature
+branches: {}
+ignore:
+  sha: []
+merge-message-formats: {}
