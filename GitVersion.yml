@@ -17,7 +17,7 @@ branches:
     mode: ContinuousDeployment
     tag: alpha
     increment: Patch
-    prevent-increment-of-merged-branch-version: true
+    prevent-increment-of-merged-branch-version: false
     track-merge-target: true
     regex: ^dev(elop)?(ment)?$
     source-branches: []
