@@ -16,8 +16,8 @@ branches:
   develop:
     mode: ContinuousDeployment
     tag: alpha
-    increment: Minor
-    prevent-increment-of-merged-branch-version: false
+    increment: Patch
+    prevent-increment-of-merged-branch-version: true
     track-merge-target: true
     regex: ^dev(elop)?(ment)?$
     source-branches: []
@@ -27,8 +27,8 @@ branches:
     pre-release-weight: 0
   main:
     mode: ContinuousDeployment
-    tag: ''
-    increment: Patch
+    tag: 'main'
+    increment: Minor
     prevent-increment-of-merged-branch-version: true
     track-merge-target: false
     regex: ^master$|^main$
