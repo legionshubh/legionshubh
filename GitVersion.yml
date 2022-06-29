@@ -17,10 +17,12 @@ branches:
     mode: ContinuousDeployment
     tag: alpha
     increment: Patch
-    prevent-increment-of-merged-branch-version: false
+    prevent-increment-of-merged-branch-version: true
     track-merge-target: true
     regex: ^dev(elop)?(ment)?$
-    source-branches: []
+    source-branches: 
+    - develop
+    - release
     tracks-release-branches: true
     is-release-branch: false
     is-mainline: false
@@ -30,11 +32,9 @@ branches:
     tag: 'main'
     increment: Minor
     prevent-increment-of-merged-branch-version: true
-    track-merge-target: false
+    track-merge-target: true
     regex: ^master$|^main$
-    source-branches:
-    - develop
-    - release
+    source-branches: []
     tracks-release-branches: false
     is-release-branch: false
     is-mainline: true
