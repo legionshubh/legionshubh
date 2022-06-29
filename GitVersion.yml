@@ -26,7 +26,7 @@ branches:
     tracks-release-branches: true
     is-release-branch: false
     is-mainline: false
-    pre-release-weight: 0
+    pre-release-weight: 55000
   main:
     mode: ContinuousDeployment
     tag: ''
@@ -38,7 +38,7 @@ branches:
     tracks-release-branches: false
     is-release-branch: false
     is-mainline: true
-    pre-release-weight: 55000
+    pre-release-weight: 0
   release:
     mode: ContinuousDelivery
     tag: beta
